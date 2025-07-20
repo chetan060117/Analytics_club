@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block title %}About Us - Analytics Club{% endblock %}
+{% block content %}
+<section class="about-hero-section text-center">
+    <div class="container">
+        <h1 class="display-4 fw-bold text-white mb-3 animate__animated animate__fadeInDown gradient-text">About Our Club</h1>
+        <p class="lead text-medium mb-4 animate__animated animate__fadeInUp" style="max-width: 800px; margin: 0 auto;">
+            We are a passionate community dedicated to exploring the power of data, fostering innovation, and building lasting connections.
+        </p>
+    </div>
+</section>
+
+<section class="team-section">
+  <div class="container">
+    <div class="section-title">
+        <h2 class="gradient-text">Meet The Team</h2>
+        <p class="text-medium">The driving force behind the Analytics Club.</p>
+    </div>
+
+    <h3 class="text-center mb-5 text-light">Club Managers</h3>
+    <div class="row justify-content-center g-4 mb-5">
+      <div class="col-lg-4 col-md-6 animate__animated animate__fadeInUp">
+        <div class="custom-card team-card">
+          <img src="{{ url_for('static', filename='images/3.jpeg') }}" alt="Vipin Parihar">
+          <h5>Vipin Parihar</h5>
+          <p>Club Manager</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+        <div class="custom-card team-card">
+          <img src="{{ url_for('static', filename='images/4.jpeg') }}" alt="Devanshi Sharma">
+          <h5>Devanshi Sharma</h5>
+          <p>Club Manager</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="text-center mb-5 text-light">Core Team</h3>
+    <div class="row justify-content-center g-4">
+      <div class="col-lg-3 col-md-6 animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+        <div class="custom-card team-card">
+          <img src="{{ url_for('static', filename='images/1.jpeg') }}" alt="Koyalkar Chetan">
+          <h5>Koyalkar Chetan</h5>
+          <p>Technical Manager</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+        <div class="custom-card team-card">
+          <img src="{{ url_for('static', filename='images/2.jpeg') }}" alt="Goutham Dev">
+          <h5>Goutham Dev</h5>
+          <p>Treasurer</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+        <div class="custom-card team-card">
+          <img src="{{ url_for('static', filename='images/5.jpeg') }}" alt="Nikita Bharti">
+          <h5>Nikita Bharti</h5>
+          <p>Operations Manager</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 animate__animated animate__fadeInUp" data-wow-delay="0.5s">
+        <div class="custom-card team-card">
+          <img src="{{ url_for('static', filename='images/6.jpeg') }}" alt="Akhil Miryala">
+          <h5>Akhil Miryala</h5>
+          <p>Marketing Manager</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

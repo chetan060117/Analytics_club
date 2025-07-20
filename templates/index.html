@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block title %}Home - Analytics Club{% endblock %}
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="container">
+    <h1 class="display-3 fw-bold text-white mb-3 animate__animated animate__fadeInDown">
+      MBA Business Analytics <span class="gradient-text">UoH 2024-26</span>
+    </h1>
+    <p class="lead animate__animated animate__fadeInUp">
+      Exploring the frontiers of data, driving innovation, and shaping the future of business analytics.
+    </p>
+    <div class="hero-image-container mt-5 animate__animated animate__zoomIn">
+      <img src="{{ url_for('static', filename='images/class_pic.jpeg') }}" alt="Class Picture" class="img-fluid">
+    </div>
+  </div>
+</section>
+
+<!-- Purpose and Vision Section -->
+<section class="purpose-vision-section">
+  <div class="container">
+    <div class="section-title">
+        <h2 class="gradient-text">Our Core Mission</h2>
+        <p class="text-medium">The principles that guide our journey in data analytics.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 animate__animated animate__fadeInLeft">
+        <div class="custom-card">
+          <div class="icon"><i class="fas fa-bullseye"></i></div>
+          <h3 class="mb-3">Purpose</h3>
+          <p>
+            To enhance creativity, management, and technical skills. We bridge the gap between academics and industry, enriching student life with diverse cultures, values, and thinking processes.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 animate__animated animate__fadeInRight">
+        <div class="custom-card">
+          <div class="icon"><i class="fas fa-lightbulb"></i></div>
+          <h3 class="mb-3">Vision</h3>
+          <p>
+            To meet the latest analytics standards and empower students with leadership, communication, problem-solving, and financial skills, while fostering a strong, celebratory club community.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Location & Contact Section -->
+<section class="location-contact-section">
+  <div class="container">
+    <div class="section-title">
+        <h2 class="gradient-text">Get In Touch</h2>
+        <p class="text-medium">Find us on campus or connect with us online.</p>
+    </div>
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6 animate__animated animate__fadeInLeft">
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.319762144783!2d78.33436592448366!3d17.442792100000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb934dccd0c4a5%3A0x30ace0adc90f2ad7!2sSchool%20of%20Management%20Studies%20(New%20Building)!5e0!3m2!1sen!2sin!4v1721453268158!5m2!1sen!2sin" 
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <div class="col-lg-6 animate__animated animate__fadeInRight">
+        <div class="custom-card">
+          <h3>Location</h3>
+          <p class="text-light fw-bold">School of Management Studies, University of Hyderabad, Telangana, India.</p>
+          <hr class="my-4" style="border-color: var(--border-color);">
+          <h3>Contact</h3>
+          <p><i class="fas fa-envelope me-2 text-primary"></i> 24mbmb13@uohyd.ac.in - Vipin</p>
+          <p><i class="fas fa-envelope me-2 text-primary"></i> 24mbmb21@uohyd.ac.in - Devanshi</p>
+          <p><i class="fas fa-envelope me-2 text-primary"></i> 24mbmb20@uohyd.ac.in - Chetan</p>
+          <div class="mt-4">
+            <a href="https://sms.uohyd.ac.in/" target="_blank" class="btn btn-custom">College Info <i class="fas fa-arrow-right ms-2"></i></a>    
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

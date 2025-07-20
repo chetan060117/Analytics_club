@@ -1,0 +1,254 @@
+/* style.css */
+
+/* --- CSS Variables for Theming --- */
+:root {
+  --primary-color: #00aaff; /* A vibrant, modern blue */
+  --secondary-color: #0077cc; /* A slightly darker blue for gradients/hovers */
+  --background-dark: #0f172a; /* A deep navy/slate blue */
+  --background-light: #1e293b; /* A lighter slate for cards/sections */
+  --text-light: #f8fafc; /* Almost white */
+  --text-medium: #cbd5e1; /* Light grey for secondary text */
+  --text-dark: #94a3b8; /* Darker grey */
+  --border-color: rgba(255, 255, 255, 0.1);
+  --font-main: 'Montserrat', sans-serif;
+}
+
+/* --- Global Styles --- */
+body {
+  background-color: var(--background-dark);
+  color: var(--text-medium);
+  font-family: var(--font-main);
+  line-height: 1.7;
+  padding-top: 80px; /* Space for fixed navbar */
+}
+
+/* --- Typography --- */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-light);
+  font-weight: 700;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+/* --- Navbar --- */
+.navbar {
+  background-color: rgba(15, 23, 42, 0.8); /* Semi-transparent background */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color);
+  padding: 1rem 0;
+  transition: background-color 0.3s ease;
+}
+
+.navbar .navbar-brand img {
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.navbar .navbar-brand:hover img {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.navbar .nav-link {
+  color: var(--text-medium);
+  font-weight: 600;
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  position: relative;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--text-light);
+  background-color: var(--background-light);
+}
+
+/* --- Hero Section (Home Page) --- */
+.hero-section {
+  padding: 6rem 0;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(circle at center, rgba(0, 170, 255, 0.1), transparent 50%);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.hero-section .display-3 {
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.hero-section .lead {
+    max-width: 700px;
+    margin: 1.5rem auto 2.5rem auto;
+    font-size: 1.25rem;
+    color: var(--text-medium);
+}
+
+.hero-image-container {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 3px solid var(--border-color);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* --- General Section Styling --- */
+section {
+    padding: 5rem 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* --- Custom Cards (Purpose/Vision, Team, Events) --- */
+.custom-card {
+    background-color: var(--background-light);
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.custom-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 170, 255, 0.2);
+    border-color: var(--primary-color);
+}
+
+.custom-card .icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+/* --- Team Cards (About Page) --- */
+.team-card {
+    text-align: center;
+}
+
+.team-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem auto;
+    border: 4px solid var(--primary-color);
+    box-shadow: 0 5px 15px rgba(0, 170, 255, 0.2);
+}
+
+.team-card h5 {
+    color: var(--text-light);
+    font-size: 1.25rem;
+}
+
+.team-card p {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* --- Event Cards --- */
+.event-card .card-img-top {
+    height: 220px;
+    object-fit: cover;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.event-card .card-body {
+    padding: 1.5rem;
+}
+
+/* --- Buttons --- */
+.btn-custom {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 170, 255, 0.2);
+}
+
+.btn-custom:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 170, 255, 0.3);
+    color: #fff;
+}
+
+/* --- Location & Map --- */
+.map-container {
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: var(--background-light);
+    padding: 3rem 0;
+    margin-top: 4rem;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.footer .social-links a {
+    color: var(--text-medium);
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+    color: var(--primary-color);
+}
+
+.footer p {
+    margin-top: 1.5rem;
+    color: var(--text-dark);
+}
+
+/* --- Event Details Page --- */
+.event-details-img {
+    max-width: 700px;
+    width: 100%;
+    border-radius: 1rem;
+    border: 3px solid var(--border-color);
+    margin: 2rem auto;
+}
+
+/* --- Animations --- */
+.animate__animated {
+    --animate-duration: 1s;
+}

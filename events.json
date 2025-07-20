@@ -1,0 +1,31 @@
+[
+    {"id": 1,
+    "title": "Tvastr25 - The Analytics Fest",
+    "image": "images/tvastr.jpg",
+    "description": "Our first-ever analytics fest, bringing together data enthusiasts from across the country for workshops, competitions, and presentations.",
+    "details": "What started as a vision has now become a milestone! With immense joy and pride, we share a few glimpses from Tvastr25, the first-ever analytics fest organized by the Analytics Club, School of Management Studies, University of Hyderabad. From workshops and quizzes to hands-on competitions and final presentations - Tvastr brought together data enthusiasts from across the country through Unstop."
+  },
+  
+  {
+    "id": 2,
+    "title": "ML Spark Session",
+    "image": "images/mlspark.jpg",
+    "description": "An ML competition on real-world scenarios.",
+    "details": "Participants were challenged with a real-world dataset and had to build a machine learning model to solve a specific problem. This event tested both their technical skills and their ability to think critically under pressure."
+  },
+  {
+    "id": 3,
+    "title": "Decode Challenge",
+    "image": "images/decode.jpg",
+    "description": "A thrilling Power BI challenge designed to test participants' problem-solving skills and analytical thinking in a competitive environment.",
+    "details": "The Decode Challenge was a competitive event where participants used Power BI to create insightful dashboards,reports and to present their insights. It was a great opportunity to showcase their data storytelling abilities."
+  },
+  {
+    "id": 4,
+    "title": "Data Workshop",
+    "image": "images/workshop.jpg",
+    "description": "A hands-on workshop covering essential data analysis techniques and tools, perfect for beginners and those looking to refresh their skills.",
+    "details": "This workshop was tailored for beginners and individuals seeking to refresh their data analysis skills. It covered key topics such as data cleaning, joins, common table expressions (CTEs), and subqueries in Snowflake."
+  }
+
+]

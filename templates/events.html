@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Events - Analytics Club{% endblock %}
+{% block content %}
+<section class="events-section">
+  <div class="container">
+    <div class="section-title">
+      <h2 class="gradient-text">Our Events</h2>
+      <p class="text-medium">A look back at our workshops, competitions, and challenges.</p>
+    </div>
+    <div class="row g-4">
+      {% for event in events %}
+      <div class="col-lg-4 col-md-6 animate__animated animate__fadeInUp">
+        <div class="custom-card event-card p-0">
+          <img src="{{ url_for('static', filename=event.image) }}" class="card-img-top" alt="{{ event.title }}">
+          <div class="card-body">
+            <h5 class="card-title text-light fw-bold">{{ event.title }}</h5>
+            <p class="card-text text-medium">{{ event.description }}</p>
+            <a href="{{ url_for('event_details', event_id=event.id) }}" class="btn btn-custom mt-3">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
+          </div>
+        </div>
+      </div>
+      {% else %}
+      <div class="col-12 text-center">
+        <p class="lead text-medium">No past events to display. Check back soon!</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}
