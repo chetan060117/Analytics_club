@@ -8,16 +8,16 @@
   
   {
     "id": 2,
-    "title": "ML Spark Session",
+    "title": "ML Spark Competition",
     "image": "images/mlspark.jpg",
     "description": "An ML competition on real-world scenarios.",
     "details": "Participants were challenged with a real-world dataset and had to build a machine learning model to solve a specific problem. This event tested both their technical skills and their ability to think critically under pressure."
   },
   {
     "id": 3,
-    "title": "Decode Challenge",
+    "title": "Decode and Display Competition",
     "image": "images/decode.jpg",
-    "description": "A thrilling Power BI challenge designed to test participants' problem-solving skills and analytical thinking in a competitive environment.",
+    "description": "A thrilling Power BI challenge designed to test participants problem-solving skills and analytical thinking in a competitive environment.",
     "details": "The Decode Challenge was a competitive event where participants used Power BI to create insightful dashboards,reports and to present their insights. It was a great opportunity to showcase their data storytelling abilities."
   },
   {
@@ -29,3 +29,4 @@
   }
 
 ]
+
