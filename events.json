@@ -26,7 +26,13 @@
     "image": "images/workshop.jpg",
     "description": "A hands-on workshop covering essential data analysis techniques and tools, perfect for beginners and those looking to refresh their skills.",
     "details": "This workshop was tailored for beginners and individuals seeking to refresh their data analysis skills. It covered key topics such as data cleaning, joins, common table expressions (CTEs), and subqueries in Snowflake."
+  },
+  {
+    "id": 5,
+    "title": "Group Discussion (GD)",
+    "image": "images/GD.jpeg",
+    "description": "The GD session sharpened participants communication and teamwork skills by engaging them in real-world analytical discussions. ",
+    "details": "The GD session conducted for the junior batch was a learning experience in developing communication and teamwork. The focus was on building critical communication skills, an analyst's essential toolkit, and the platform for participants to share insights, debate ideas, and engage in productive dialogue."
   }
 
 ]
-
