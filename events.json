@@ -22,7 +22,7 @@
   },
   {
     "id": 4,
-    "title": "Data Workshop",
+    "title": "SQL Workshop",
     "image": "images/workshop.jpg",
     "description": "A hands-on workshop covering essential data analysis techniques and tools, perfect for beginners and those looking to refresh their skills.",
     "details": "This workshop was tailored for beginners and individuals seeking to refresh their data analysis skills. It covered key topics such as data cleaning, joins, common table expressions (CTEs), and subqueries in Snowflake."
@@ -36,3 +36,4 @@
   }
 
 ]
+
